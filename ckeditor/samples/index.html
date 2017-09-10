@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CKEditor Sample</title>
+	<script src="../ckeditor.js"></script>
+	<script src="js/sample.js"></script>
+	<link rel="stylesheet" href="css/samples.css">
+	<link rel="stylesheet" href="toolbarconfigurator/lib/codemirror/neo.css">
+</head>
+<body id="main">
+<main style="margin-left: 80px;">
+	<div id="editor">
+
+	</div>
+	<button onclick="Upload()">Upload</button>
+	<p>dadaads</p><p><img class="cke_iframe" data-cke-realelement="%3Ciframe%20src%3D%22https%3A%2F%2Fwww.google.com.vn%2F%3Fgfe_rd%3Dcr%26amp%3Bdcr%3D0%26amp%3Bei%3DQ-6zWaaSFqbY8gfjwpbYBQ%26amp%3Bgws_rd%3Dssl%22%20width%3D%22560%22%20height%3D%22315%22%20scrolling%3D%22no%22%20frameborder%3D%220%22%3E%3C%2Fiframe%3E" data-cke-real-node-type="1" alt="IFrame" title="IFrame" align="" src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" data-cke-real-element-type="iframe" data-cke-resizable="true" style="width:560px;height:315px;">​​​​​​​<br></p>
+</main>
+
+<script>
+	initSample();
+</script>
+
+
+<script>
+	function Upload() {
+		var data = CKEDITOR.instances.editor.document.getBody().getHtml();
+		console.log(data);
+	}
+</script>
+</body>
+</html>
